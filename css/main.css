@@ -1,0 +1,342 @@
+
+/* PAGE STRUCTURE
+------------------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Anonymous+Pro:700);
+@import url(http://fonts.googleapis.com/css?family=Titillium+Web:700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400);
+
+html, body {
+    background-color: #1E2A34;
+    min-height:100vh;
+    min-width:100vw;
+   -webkit-text-size-adjust: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.div{
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+a:link {
+    color: #D5CDCD;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #D5CDCD;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FF988B;
+    text-decoration: none;
+}
+
+
+/* ANIMATION CSS
+------------------------------------------------------- */
+.spinner {
+	/* Size and position */
+    font-size: 130px; /* 1em */
+    width: 1em;
+    height: 1em;
+    margin: 100px auto;
+    position: relative;
+
+    /* Styles */
+    list-style: none;
+    border-radius: 50%;
+    border: .045em solid #D5CDCD; 
+ }
+
+.spinner li {
+	width: .15em;
+    height: .15em;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.spinner li:nth-child(1) {
+    left: 50%;
+    top: 0;
+    margin-left: -.1em;
+    background: #E74C3C;
+    -webkit-transform-origin: 50% 250%;
+    transform-origin: 50% 250%;
+    -webkit-animation: 
+        rota 1.13s linear infinite;
+    animation: 
+        rota 1.13s linear infinite;
+}
+
+.spinner li:nth-child(2) {
+    top: 50%; 
+    right: 0;
+    margin-top: -.1em;
+    background: #2ECC71;
+    -webkit-transform-origin: -150% 50%;
+    transform-origin: -150% 50%;
+    -webkit-animation: 
+        rota 1.86s linear infinite;
+    animation: 
+        rota 1.86s linear infinite;
+}
+
+.spinner li:nth-child(3) {
+    bottom: 0; 
+    left: 50%;
+    margin-left: -.1em;
+    background: #4A90E2;
+    -webkit-transform-origin: 50% -150%;
+    transform-origin: 50% -150%;
+    -webkit-animation: 
+        rota 1.42s linear infinite;
+    animation: 
+        rota 1.42s linear infinite;
+}
+
+.spinner li:nth-child(4) {
+    left: 20%; 
+    top: 50%;
+    margin-left: -.1em;
+    background: #F1C40F;
+    -webkit-transform-origin: 250% 50%;
+    transform-origin: 250% 50%;
+    -webkit-animation: 
+        rota 2.11s linear infinite;
+    animation: 
+        rota 2.11s linear infinite;
+}
+
+@-webkit-keyframes rota {
+    from { }
+    to { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes rota {
+    from { }
+    to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+
+/* LANDING CSS 
+------------------------------------------------------ */
+#loader-wrapper .loader-section {
+    position: fixed;
+    top: 0;
+    width: 51%;
+    height: 100%;
+    background: #1E2A34;
+    z-index: 1000;
+}
+ 
+#loader-wrapper .loader-section.section-left {
+    left: 0;
+}
+ 
+#loader-wrapper .loader-section.section-right {
+    right: 0;
+}
+
+/* Loaded */
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transform: translateX(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(-100%);  /* IE 9 */
+            transform: translateX(-100%);  /* Firefox 16+, IE 10+, Opera */
+}
+ 
+.loaded #loader-wrapper .loader-section.section-right {
+    -webkit-transform: translateX(100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(100%);  /* IE 9 */
+            transform: translateX(100%);  /* Firefox 16+, IE 10+, Opera */
+}
+
+.loaded #loader-wrapper {
+    visibility: hidden;
+}
+
+.loaded #loader {
+    opacity: 0;
+    -webkit-transition: all 0.05s ease-out; 
+            transition: all 0.05s ease-out;
+}
+
+.loaded #loader-wrapper .loader-section.section-right,
+.loaded #loader-wrapper .loader-section.section-left {
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000); 
+            transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+}
+
+.loaded #loader-wrapper { 
+        -webkit-transition: all 0.3s 1s ease-out; 
+                transition: all 0.3s 1s ease-out;
+}
+
+.no-js #loader-wrapper {
+    display: none;
+}
+
+/* spinner css*/
+.landing {
+   width: 100%;
+   height: 100vh;
+   line-height: 100%;
+   margin: auto;
+   padding-top:200px;
+   position: absolute;
+   z-index: 1001;
+}
+
+.landing-text {
+	color: #D5CDCD;
+	font-family:'Anonymous Pro';
+	font-weight: 700;
+	font-size: 1em;
+	letter-spacing: 3px;
+	text-align: center;
+	position: relative;
+	top: -75px;
+}
+
+
+/* CONTENT CSS
+------------------------------------------------------- */
+
+.content {
+    padding-top: 9em;
+    text-align: center;
+    min-height: 100%;
+}
+
+#profile {
+    height:20em;
+}
+
+.content h1 {
+    font-family: 'Titillium Web';
+    font-weight: 700;
+    color: #FF988B;
+    font-size: 3.1em;
+    margin-top: -6px;
+    margin-bottom: -3px;
+}
+
+.content p {
+    font-family: 'Roboto';
+    letter-spacing: 0.12px;
+    color: #D5CDCD;
+    font-size: 0.92em;
+    line-height: 1.5em;
+    text-align: center;
+    margin: auto;
+    max-width: 22.2em;
+}
+
+
+/* FOOTER CSS
+------------------------------------------------------- */
+.email {
+	position: relative;
+	text-align: center;
+    padding-top: 13em;
+}
+
+.email p {
+    font-family: 'Roboto';
+    font-size: 0.8em;
+    color: #D5CDCD;
+    opacity: 30%;
+    margin:auto;
+    padding-bottom: 50px;
+    opacity: 0.35;
+}
+
+.email img {
+    display: block;
+    height: 15px;
+    vertical-align: middle;
+    margin: auto;
+    margin-bottom: 3px;
+    opacity: 0.25;
+} 
+
+/* MOBILE CSS
+------------------------------------------------------- */
+@media screen and (max-width: 800px) {
+
+	* {
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	    margin-top: 0;
+	}
+	 
+	html,
+	body,
+	div{
+	    margin: 0;
+	    padding: 0;
+	}
+
+	body, html {
+		max-height: 100%;
+		max-width: 100%;
+	}
+
+	 #loader-wrapper {
+	    visibility: hidden;
+	    clear: both;
+	    display: none;
+	  }
+	  
+     #profile {
+        margin-top: 3em;
+        max-height: 15em;
+     }
+
+     .content {
+        padding: 0.5em;
+     }
+
+	 .content > h1 {
+	 	margin-top: 10px;
+        font-size: 2.5em;
+	 	margin-bottom: 10px;
+        width: 100vw;
+	 }
+
+	 .content p {
+        width: 100vw;
+	  	font-size: 0.8em;
+	 }
+
+     .email {
+        margin-top: -0.5em;
+     }
+
+	 .email p {
+	  	font-size:0.5em;
+	 }
+
+	 .email img {
+	  	height: 0.5em;
+	 }
+
+	 a:link {
+    	color: #D5CDCD;
+    	text-decoration: none;
+	 }
+ 
+	 a:visited {
+    	color: #D5CDCD;
+    	text-decoration: none;
+	 }
+	  
+}
