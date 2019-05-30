@@ -1,65 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
 
- 	<head>
-	    <meta charset="utf-8">
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta charset="utf-8">
+		<title>Hi, I'm Tiffany</title>
+		<meta name="description" content="I dabble in design, web development, and data analysis. I will start working as an Associate Product Manager at Google in August 2019.">
+		<meta name="author" content="Tiffany Perumpail">
+
+		<meta property="og:title" content="Hi, I'm Tiffany"/>
+		<meta property="og:image" content="http://tiffanyperumpail.co/assets/img/bg-intro.jpg"/>
+		<meta property="og:site_name" content="Tiffany Perumpail"/>
+		<meta property="og:description" content="I dabble in design, web development, and data analysis. I will start working as an Associate Product Manager at Google in August 2019."/>
+
+		<meta name="twitter:card" content="photo">
+		<meta name="twitter:url" content="http://tiffanyperumpail.co">
+		<meta name="twitter:title" content="Tiffany Perumpail">
+		<meta name="twitter:description" content="I dabble in design, web development, and data analysis. I will start working as an Associate Product Manager at Google in August 2019.">
+		<meta name="twitter:image" content="http://tiffanyperumpail.co/assets/img/bg-intro.jpg">
+		<meta name="twitter:site" content="@sanghan_">
+		<meta name="twitter:creator" content="@sanghan_">
+
+		<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+
+		<!-- Mobile Specific Metas
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	    <title>Tiffany Perumpail</title>
+		<!-- FONTS
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-		<link rel="stylesheet" href="css/main.css" type="text/css"/>
-		<link rel="stylesheet" href="css/normalize.css">
+		<!-- CSS
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="css/main.css">
 
-  		<link rel="icon" type="image/png" href="img/favicon.png">
+		<!-- Favicon
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="icon" href="http://www.tiffanyperumpail.co/favicon.png" />
+
+		<!-- Vendor Prefixes
+		–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<script type="text-javascript" src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
 	</head>
+	<body class="invisible">
 
- 	<body class="">
-    	
-    	<div id="loader-wrapper">
-   			<div id="loader">
-   				<div class="landing">
-					<ul class="spinner">
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
-					<div class="landing-text">
-						<p>Hello!</p>
-					</div>
+		<a href="/" class="logo">
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 67.94 67.78">
+				<title>Tiffany Perumpail</title>
+				<path id="letter" d="" transform="translate(-0.53 -0.61)" fill="#999"/>
+				<polyline id="outline-left" points="33.97 67.32 10.33 57.53 0.54 33.89 10.33 10.25 33.97 0.46" fill="none" stroke="#999" stroke-width="0.25" stroke-miterlimit="10"/>
+				<polyline id="outline-right" points="33.97 0.46 57.61 10.25 67.4 33.89 57.61 57.53 33.97 67.32" fill="none" stroke="#999" stroke-width="0.25" stroke-miterlimit="10"/>
+			</svg>
+		</a>
+		<a href="#intro" class="link link--about link--active lg-show"><span>About</span></a>
+		<a href="#journal" class="link link--journal lg-show"><span>Journal</span></a>
+
+		<div class="hamburger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="hamburger-menu hide">
+			<ul>
+				<li><a href="#intro" class="link link--about link--active">About</a></li>
+				<li><a href="#journal" class="link link--journal">Journal</a></li>
+			</ul>
+			<div class="close">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5.93 5.93">
+				  <title>icon-close</title>
+				  <polygon points="5.93 0.47 5.47 0 2.97 2.5 0.47 0 0 0.47 2.5 2.97 0 5.47 0.47 5.93 2.97 3.44 5.47 5.93 5.93 5.47 3.44 2.97 5.93 0.47" fill="#fff" fill-rule="evenodd" />
+				</svg>
+			</div>
+		</div>
+
+		<div id="intro" class="scroll-triggered st-group invisible" data-st-animation="none" data-st-gutter="0">
+
+			<div class="layer z2 text-wrapper">
+				<div class="text valign">
+					<h1>Hi, I'm Tiffany</h1>
 				</div>
-   			</div>
-		    <div class="loader-section section-left"></div>
-		    <div class="loader-section section-right"></div>
+			</div>
+			<div class="background layer"></div>
+
 		</div>
-    
-		<div class="content">
-			<img src="img/profile_photo.png" alt="personal photo" id="profile" />
-			<h1> Hi, I'm Tiffany. </h1>
-			<p>I dabble in design, web development, and data analysis. I'm currently a Teaching Assistant for <a href="http://cs61a.org/" target="_blank">CS 61A</a>, the Structures and Interpretation of Computer Programs.<br></br> 
+		<div class="intro-spacer"></div>
 
-			<br>
-			<h2>In my section?</h2>
-			<p>
-			<a href="/cs61a-resources/cs61a.html">Click here</a> for some CS61A resources!</p>
+		<div id="bio" class="scroll-triggered st-group invisible" data-st-animation="none" data-st-gutter="1">
 
-			<br>
-			<p>
-			<a href="https://github.com/tiffanyperumpail">github</a> // <a href="https://www.linkedin.com/pub/tiffany-perumpail/102/aa5/743" target="_blank">linkedin</a></p>
+			<div class="text">
+				<div class="container">
+					<h2>I dabble in design, web development, and data analysis. I'm currently a lecturer for CS 61A, the Structures and Interpretation of Computer Programs.</h2>
+				</div>
+			</div>
+
 		</div>
 
+		<div id="career" class="scroll-triggered st-group invisible" data-st-animation="none" data-st-gutter="0">
+
+			<div class="container relative">
+				<h1 id="title-career" class="title scroll-triggered st-group invisible"><span>Career</span></h1>
+				<ul>
+					<li class="col-push-1 scroll-triggered st-group invisible">
+						<div>
+							Associate Product Manager<span>Google (Team TBD)</span>
+							<em></em>
+						</div>
+					</li>
+					<li class="col-push-4 lg-col-push-5 scroll-triggered st-group invisible">
+						<div>
+							Lecturer for CS61A<span>UC Berkeley</span>
+							<em></em>
+						</div>
+					</li>
+					<li class="col-push-1 scroll-triggered st-group invisible">
+						<div>
+							Software Intern<span>Google Internal Course Engine</span>
+							<em></em>
+						</div>
+					</li>
+					<li class="col-push-4 lg-col-push-5 scroll-triggered st-group invisible">
+						<div>
+							Software Intern<span>Google Analytics</span>
+							<em></em>
+						</div>
+					</li>
+					<li class="col-push-1 scroll-triggered st-group invisible">
+						<div>
+							Software Intern<span>Google Machine Intelligence</span>
+							<em></em>
+						</div>
+					</li>
+					<li class="col-push-4 lg-col-push-5 scroll-triggered st-group invisible">
+						<div>
+							Junior Software Engineer<span>Wikimedia Foundation (Wikia)</span>
+							<em></em>
+						</div>
+					</li>
+					<li class="col-push-1 scroll-triggered st-group invisible">
+						<div>
+							Software Intern<span>Wikimedia Foundation (Wikia)</span>
+							<em></em>
+						</div>
+					</li>
+					<li class="col-push-4 lg-col-push-5 scroll-triggered st-group invisible">
+						<div>
+							Teaching Assistant for CS 61A, 370 & 375<span>UC Berkeley</span>
+							<em></em>
+						</div>
+					</li>
+					<li class="col-push-1 scroll-triggered st-group invisible">
+						<div>
+							Networks Research Intern<span>Alcatel-Lucent</span>
+							<em></em>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		</div>
 
 
-		<div class="email">
-			<img src="img/email.png" alt="email" /> 
-			<p> <a href="mailto: tperumpail@berkeley.edu"> Shoot me an email? </a> </p>
-		</div>	
-			
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
-		<script src="js/main.js"></script>
+		<div id="connect" class="scroll-triggered st-group invisible" data-st-animation="none" data-st-gutter="0">
+
+			<div class="valign z2">
+				<h2 class="scroll-triggered st-group invisible">
+					<a href="mailto:tiffrp96@gmail.com">
+						tiffrp96<span class="dark"></span><span class="symbol">@</span><span class="dark">gmail.com</span>
+					</a>
+				</h2>
+			</div>
+
+			<ul>
+				<li><a href="https://github.com/tiffanyperumpail" target="_blank"><i class="fa fa-github"></i></a></li>
+				<li><a href="https://www.linkedin.com/in/tiffany-p-743aa5102/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+			</ul>
+
+			<div class="bg layer"></div>
+
+		</div>
+
+		<div id="journal" class="hide">
+
+			<div class="container images-wrapper">
+
+				<div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/20.jpg" alt="" />
+						<figcaption>Abyss</figcaption>
+					</figure>
+				</div>
+
+				<div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/19.jpg" alt="" />
+						<figcaption>Hustle</figcaption>
+					</figure>
+				</div>
+
+				<div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/18.jpg" alt="" />
+						<figcaption>Venice</figcaption>
+					</figure>
+				</div>
+
+				<div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/17.jpg" alt="" />
+						<figcaption>Good</figcaption>
+					</figure>
+				</div>
+
+            	<div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/16.jpg" alt="" />
+						<figcaption>Next</figcaption>
+					</figure>
+				</div>
+
+                <div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/15.jpg" alt="" />
+						<figcaption>Ghosts 1/3</figcaption>
+					</figure>
+				</div>
+
+                <div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/14.jpg" alt="" />
+						<figcaption>Ghosts 2/3</figcaption>
+					</figure>
+				</div>
+
+                <div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/13.jpg" alt="" />
+						<figcaption>Ghosts 3/3</figcaption>
+					</figure>
+				</div>
+
+				<div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/12.jpg" alt="" />
+						<figcaption>Ronin</figcaption>
+					</figure>
+				</div>
+
+				<div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/11.jpg" alt="" />
+						<figcaption>Saturdays</figcaption>
+					</figure>
+				</div>
+
+				<div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/10.jpg" alt="" />
+						<figcaption>Sunnyvale</figcaption>
+					</figure>
+				</div>
+
+                <div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/09.jpg" alt="" />
+						<figcaption>Ex Machina</figcaption>
+					</figure>
+				</div>
+
+				<div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/08.jpg" alt="" />
+						<figcaption>SF 70s</figcaption>
+					</figure>
+				</div>
+
+				<div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/07.jpg" alt="" />
+						<figcaption>Santa Cruzin</figcaption>
+					</figure>
+				</div>
+
+				<div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/06.jpg" alt="" />
+						<figcaption>Evelyn</figcaption>
+					</figure>
+				</div>
+
+				<div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/05.jpg" alt="" />
+						<figcaption>Waiting</figcaption>
+					</figure>
+				</div>
+
+				<div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/04.jpg" alt="" />
+						<figcaption>Humans of NY</figcaption>
+					</figure>
+				</div>
+
+				<div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/03.jpg" alt="" />
+						<figcaption>Close</figcaption>
+					</figure>
+				</div>
+
+				<div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/02.jpg" alt="" />
+						<figcaption>Filbert &amp; Montgomery</figcaption>
+					</figure>
+				</div>
+
+				<div class="image-holder">
+					<figure class="scroll-triggered st-group invisible" data-st-container="#journal">
+						<img src="assets/journal/01.jpg" alt="" />
+						<figcaption>Soloparking</figcaption>
+					</figure>
+				</div>
+
+			</div>
+
+		</div>
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/main.min.js"></script>
 
 	</body>
-
 </html>
